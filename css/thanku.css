@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.thank-you-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container h1 {
+    color: #28a745;
+}
+
+.thank-you-container .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.delivery-date {
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+}

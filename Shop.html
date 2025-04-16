@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+    <div class="about-container">
+
+        <!-- Header Section -->
+        <div class="header-container">
+            <h1>Shop</h1>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input type="text" id="search-input" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="products.html">Consoles</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+            </ul>
+        </div>
+
+         <!-- Cart Icon Section -->
+    <div class="cart-container">
+        <a href="cart.html" class="cart-link">
+            <img src="./imag/cart.jpg" alt="Cart" class="cart-icon">
+            <span id="cart-count" class="cart-count">0</span> <!-- Cart Count -->
+        </a>
+    </div>
+
+    
+
+         
+      
+            <main class="shop-container">
+                <!-- Product Categories in Grid Layout -->
+                <div class="category-grid">
+                    <section class="category" id="processors">
+                        <h2>Processors</h2>
+                        <div class="product-grid">
+                    
+                            <div class="product">
+                                <img src="imag/4e41b52b9b8a1b745d508fd73e8d2760ca49918b-512x512.png" alt="INTEL I5 12400F">
+                                <h4>INTEL I5 12400F (Cores 6 / Threads 12)</h4>
+                                <p>Rs. 38,000.00</p>
+                                <button class="add-to-cart" data-name="INTEL I5 12400F (Cores 6 / Threads 12)" data-price="38000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="INTEL I5 12400F (Cores 6 / Threads 12)" data-price="38000">Buy Now</button>
+                            </div>
+                    
+                            <div class="product">
+                                <img src="imag/75a66c915bf0bdca653db91ad672ba32265539e0-500x500.png" alt="Intel i5 14400F">
+                                <h4>INTEL® CORE™ i5 14400F (Cores 10 / Threads 16)</h4>
+                                <p>Rs. 50,500.00</p>
+                                <button class="add-to-cart" data-name="INTEL® CORE™ i5 14400F (Cores 10 / Threads 16)" data-price="50500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="INTEL® CORE™ i5 14400F (Cores 10 / Threads 16)" data-price="50500">Buy Now</button>
+                            </div>
+                    
+                            <div class="product">
+                                <img src="imag/MB1.png" alt="AMD RYZEN Threadripper 3990X">
+                                <h4>AMD RYZEN Threadripper 3990X (Cores 64 / Threads 128)</h4>
+                                <p>Rs. 1,100,000.00</p>
+                                <button class="add-to-cart" data-name="AMD RYZEN Threadripper 3990X (Cores 64 / Threads 128)" data-price="1100000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="AMD RYZEN Threadripper 3990X (Cores 64 / Threads 128)" data-price="1100000">Buy Now</button>
+                            </div>
+                    
+                            <div class="product">
+                                <img src="imag/MB2.png" alt="AMD Ryzen 9 9900X3D">
+                                <h4>AMD Ryzen 9 9900X3D (Cores 12 / Threads 24)</h4>
+                                <p>Rs. 219,000.00</p>
+                                <button class="add-to-cart" data-name="AMD Ryzen 9 9900X3D (Cores 12 / Threads 24)" data-price="219000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="AMD Ryzen 9 9900X3D (Cores 12 / Threads 24)" data-price="219000">Buy Now</button>
+                            </div>
+                    
+                            <div class="product">
+                                <img src="imag/MB3.png" alt="Intel Core Ultra 9 285K">
+                                <h4>Intel Core Ultra 9 Processor 285K</h4>
+                                <p>Rs. 194,000.00</p>
+                                <button class="add-to-cart" data-name="Intel Core Ultra 9 Processor 285K" data-price="194000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Intel Core Ultra 9 Processor 285K" data-price="194000">Buy Now</button>
+                            </div>
+                    
+                            <div class="product">
+                                <img src="imag/MB4.png" alt="AMD RYZEN 9 7950X">
+                                <h4>AMD RYZEN 9 7950X (Cores 16 / Threads 32)</h4>
+                                <p>Rs. 220,000.00</p>
+                                <button class="add-to-cart" data-name="AMD RYZEN 9 7950X (Cores 16 / Threads 32)" data-price="220000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="AMD RYZEN 9 7950X (Cores 16 / Threads 32)" data-price="220000">Buy Now</button>
+                            </div>
+                    
+                        </div>
+                    </section>
+                    
+            
+                    <section class="category" id="graphic-cards">
+                        <h2>Graphic Cards</h2>
+                        <div class="product-grid">
+                            <div class="product">
+                                <img src="imag/GC1.png" alt="ASUS ROG RTX 5090 Astral 32GB GDDR7">
+                                <h4>ASUS ROG RTX 5090 Astral 32GB GDDR7</h4>
+                                <p>Rs.  1,499,000.00</p>
+                        
+                                <button class="add-to-cart" data-name="ASUS ROG RTX 5090 Astral 32GB GDDR7" data-price=" 1499000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="ASUS ROG RTX 5090 Astral 32GB GDDR7" data-price=" 1499000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/GC2.png" alt="ASUS ROG STRIX RTX 4090 24GB GAMING OC">
+                                <h4>ASUS ROG STRIX RTX 4090 24GB GAMING OC</h4>
+                                <p>Rs. 1,081,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="ASUS ROG STRIX RTX 4090 24GB GAMING OC" data-price="1081000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="ASUS ROG STRIX RTX 4090 24GB GAMING OC" data-price="1081000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/GC3.png" alt="ASUS RTX 3080TI 12GB GAMING OC">
+                                <h4>ASUS RTX 3080TI 12GB GAMING OC</h4>
+                                <p>Rs. 760,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="ASUS RTX 3080TI 12GB GAMING OC" data-price="760000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="ASUS RTX 3080TI 12GB GAMING OC" data-price="760000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/GC4.png" alt="ASUS ROG STRIX GEFORCE RTX 4070Ti 12GB">
+
+                                <h4>ASUS ROG STRIX GEFORCE RTX 4070Ti 12GB</h4>
+                                <p>Rs. 420,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="ASUS ROG STRIX GEFORCE RTX 4070Ti 12GB" data-price="420000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="ASUS ROG STRIX GEFORCE RTX 4070Ti 12GB" data-price="420000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/GC5.png" alt="ASUS ROG STRIX RTX 3060 12GB GAMING OC V2">
+                                <h4>ASUS ROG STRIX RTX 3060 12GB GAMING OC V2</h4>
+                                <p>Rs. 215,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="ASUS ROG STRIX RTX 3060 12GB GAMING OC V2C" data-price="215000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="ASUS ROG STRIX RTX 3060 12GB GAMING OC V2C" data-price="215000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/GC6.png" alt="MSI RTX 5080 16GB Inspire 3X OC Edition GDDR7">
+                                <h4>MSI RTX 5080 16GB Inspire 3X OC Edition GDDR7</h4>
+                                <p>Rs.488,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="MSI RTX 5080 16GB Inspire 3X OC Edition GDDR7" data-price="488000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="MSI RTX 5080 16GB Inspire 3X OC Edition GDDR7" data-price="488000.00.0++
+                                00">Buy Now</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="category" id="motherboards">
+                        <h2>Motherboards</h2>
+                        <div class="product-grid">
+                            <div class="product">
+                                <img src="imag/m1.png" alt="MSI A520M-A PRO Motherboard">
+                                <h4>MSI A520M-A PRO Motherboard</h4>
+                                <p>Rs. 25,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="MSI A520M-A PRO Motherboard" data-price="41500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="MSI A520M-A PRO Motherboard" data-price="41500">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/m2.png" alt="MSI B550M PRO-VDH WIFI Motherboard">
+                                <h4>MSI B550M PRO-VDH WIFI Motherboard</h4>
+                                <p>Rs. 50,500.00</p>
+                                
+                                <button class="add-to-cart" data-name="MSI B550M PRO-VDH WIFI Motherboard" data-price="50500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="MSI B550M PRO-VDH WIFI Motherboard" data-price="50500">Buy Now</button>
+                                
+
+                                </div>
+
+                            <div class="product">
+                                <img src="imag/m3.png" alt="Asus Tuf Z890-Plus Wifi D5 Motherboard">
+                                <h4>Asus Tuf Z890-Plus Wifi D5 Motherboard</h4>
+                                <p>Rs.  129,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="Asus Tuf Z890-Plus Wifi D5 Motherboard" data-price=" 129000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Asus Tuf Z890-Plus Wifi D5 Motherboard" data-price="129000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/m4.png" alt="Asus Tuf Z890-Pro Wifi DDR5 Motherboard">
+                                <h4>Asus Tuf Z890-Pro Wifi DDR5 Motherboard</h4>
+                                <p>Rs.  144,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="Asus Tuf Z890-Pro Wifi DDR5 Motherboard" data-price="  144000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Asus Tuf Z890-Pro Wifi DDR5 Motherboard" data-price="  144000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/m5.png" alt="MSI MPG Z790 CARBON WIFI DDR5 Motherboard">
+                                <h4>MSI MPG Z790 CARBON WIFI DDR5 Motherboard</h4>
+                                <p>Rs.  173,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="MSI MPG Z790 CARBON WIFI DDR5 Motherboard" data-price=" 173000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="MSI MPG Z790 CARBON WIFI DDR5 Motherboard" data-price="173000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/m6.png" alt="ASUS ROG CROSSHAIR X670E- HERO Gaming WI-FI DDR5 Motherboard">
+                                <h4>ASUS ROG CROSSHAIR X670E- HERO Gaming WI-FI DDR5 Motherboard</h4>
+                                <p>Rs.   195,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="ASUS ROG CROSSHAIR X670E- HERO Gaming WI-FI DDR5 Motherboard" data-price="  195000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="ASUS ROG CROSSHAIR X670E- HERO Gaming WI-FI DDR5 Motherboard" data-price=" 195000">Buy Now</button>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="category" id="memory">
+                        <h2>Memory (RAM)</h2>
+                        <div class="product-grid">
+                            <div class="product">
+                                <img src="imag/r1.png" alt="CORSAIR VENGEANCE RGB 64GB (32x2) DDR5 6200MHZ MEMORY">
+                                <h4>CORSAIR VENGEANCE RGB 64GB (32x2) DDR5 6200MHZ MEMORY</h4>
+                                <p>Rs. 98,500.00</p>
+                               
+                                <button class="add-to-cart" data-name="CORSAIR VENGEANCE RGB 64GB (32x2) DDR5 6200MHZ MEMORY" data-price="98500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="CORSAIR VENGEANCE RGB 64GB (32x2) DDR5 6200MHZ MEMORY" data-price="98500">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/r2.png" alt="G.SKILL RIPJAWS DDR5 SO-DIMM DDR5-5200 CL38-38-38 F5-5200S3838A16GX1-RS (1x16GB) LAP RAM">
+                                <h4>G.SKILL RIPJAWS DDR5 SO-DIMM DDR5-5200 CL38-38-38 F5-5200S3838A16GX1-RS (1x16GB) LAP RAM</h4>
+                                <p>Rs.  32,000.00</p>
+                               
+                                <button class="add-to-cart" data-name="G.SKILL RIPJAWS DDR5 SO-DIMM DDR5-5200 CL38-38-38 F5-5200S3838A16GX1-RS (1x16GB) LAP RAM" data-price=" 32000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="G.SKILL RIPJAWS DDR5 SO-DIMM DDR5-5200 CL38-38-38 F5-5200S3838A16GX1-RS (1x16GB) LAP RAM" data-price=" 32000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/r3.png" alt="G.SKILL 16GB DDR5 4800 - Lap Ram">
+                                <h4>G.SKILL 16GB DDR5 4800 - Lap Ram</h4>
+                                <p>Rs.24,000.00</p>
+                               
+                                <button class="add-to-cart" data-name="G.SKILL 16GB DDR5 4800 - Lap Ram" data-price="24000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="G.SKILL 16GB DDR5 4800 - Lap Ram" data-price="24000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/r4.png" alt="Crucial DDR5 4800MHZ 32GB Lap Ram">
+                                <h4>Crucial DDR5 4800MHZ 32GB Lap Ram</h4>
+                                <p>Rs. 35,000.00</p>
+                               
+                                <button class="add-to-cart" data-name="Crucial DDR5 4800MHZ 32GB Lap Ram" data-price=" 35000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Crucial DDR5 4800MHZ 32GB Lap Ram" data-price="35000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/r5.png" alt="Corsair Vengeance 32GB DDR5 5600mhz Desktop Ram">
+                                <h4>Corsair Vengeance 32GB DDR5 5600mhz Desktop Ram</h4>
+                                <p>Rs. 35,000.00</p>
+                               
+                                <button class="add-to-cart" data-name="Corsair Vengeance 32GB DDR5 5600mhz Desktop Ram" data-price=" 35000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Corsair Vengeance 32GB DDR5 5600mhz Desktop Ram" data-price=" 35000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/r6.png" alt="G.SKILL TRIDENT Z RGB DDR4-3600 32GB (2x16GB)">
+                                <h4>G.SKILL TRIDENT Z RGB DDR4-3600 32GB (2x16GB)</h4>
+                                <p>Rs. 23,500.00</p>
+                               
+                                <button class="add-to-cart" data-name="G.SKILL TRIDENT Z RGB DDR4-3600 32GB (2x16GB)" data-price=" 23500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="G.SKILL TRIDENT Z RGB DDR4-3600 32GB (2x16GB)" data-price="23500">Buy Now</button>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="category" id="storage">
+                        <h2>Storage Devices</h2>
+                        <div class="product-grid">
+
+                            <div class="product">
+                                <img src="imag/s1.png" alt="Transcend 2TB USB 3.1 25H3 External Hard Drive">
+                                <h4>Transcend 2TB USB 3.1 25H3 External Hard Drive</h4>
+                                <p>Rs.27,500.00 </p>
+                                
+                                <button class="add-to-cart" data-name="Transcend 2TB USB 3.1 25H3 External Hard Drive" data-price="27500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Transcend 2TB USB 3.1 25H3 External Hard Drive" data-price="27500">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/s2.png" alt="WD Purple 1TB Hard Drive">
+                                <h4>WD Purple 1TB Hard Drive</h4>
+                                <p>Rs. 19,500.00</p>
+                                
+                                <button class="add-to-cart" data-name="WD Purple 1TB Hard Drive" data-price=" 19500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="WD Purple 1TB Hard Drive" data-price=" 19500">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/s3.png" alt="Transcend 4TB 25H3 USB 3.1 External Hard Drive">
+                                <h4>Transcend 4TB 25H3 USB 3.1 External Hard Drive</h4>
+                                <p>Rs. 41,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="Transcend 4TB 25H3 USB 3.1 External Hard Drive" data-price=" 41000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Transcend 4TB 25H3 USB 3.1 External Hard Drive" data-price=" 41000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/s4.png" alt="Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive">
+                                <h4>Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive</h4>
+                                <p>Rs. 9,500.00</p>
+                                
+                                <button class="add-to-cart" data-name="Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive" data-price="9500">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive" data-price="9500">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/s5.png" alt="SEAGATE 10TB NAS IRONWOLF HARD">
+                                <h4>SEAGATE 10TB NAS IRONWOLF HARD</h4>
+                                <p>Rs. 114,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="SEAGATE 10TB NAS IRONWOLF HARD" data-price=" 114000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="SEAGATE 10TB NAS IRONWOLF HARD" data-price=" 114000">Buy Now</button>
+                            </div>
+
+                            <div class="product">
+                                <img src="imag/s6.png" alt="SEAGATE 16TB NAS IRONWOLF HARD">
+                                <h4>SEAGATE 16TB NAS IRONWOLF HARD</h4>
+                                <p>Rs.170,000.00</p>
+                                
+                                <button class="add-to-cart" data-name="SEAGATE 16TB NAS IRONWOLF HARD" data-price="170000">🛒 Add to Cart</button>
+                                <button class="buy-now" data-name="SEAGATE 16TB NAS IRONWOLF HARD" data-price="170000">Buy Now</button>
+                            </div>
+
+
+
+                        </div>
+                    </section>
+                </div>
+            </main>
+     
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <p>Follow us on:
+                    <a href="#" class="social-link">Facebook</a> |
+                    <a href="#" class="social-link">Twitter</a> |
+                    <a href="#" class="social-link">Instagram</a>
+                </p>
+                <p>&copy; 2025 CodePlay Studio. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script/shop.js"></script>
+</body>
+</html>

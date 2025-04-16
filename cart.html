@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <!-- Button to apply favourite items -->
+        <button id="apply-favorites">Apply Favourites</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                    <th>Favorite</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="total">
+            <h2>Total:  <span id="cart-total">0</span></h2>
+        </div>
+
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <button id="clear-cart">Clear Cart</button>
+    </div>
+
+    <script src="script/cart.js"></script>
+</body>
+</html>

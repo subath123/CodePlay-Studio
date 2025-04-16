@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    color: white;
+    text-align: center;
+}
+
+.text {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+/* navigation bar */
+
+.navbar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent navbar background */
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #FFD700;
+}
+
+/* Section Styles */
+h2 {
+    color: #282c34;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 170%;
+}
+
+/* Introduction Section */
+.introduction {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 20px;
+    background-color: #f1f3f5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Upcoming Games Section */
+.upcoming-games {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 20px;
+    background-color: #f1f3f5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Why Choose Us Section */
+.why {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.why ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why ul li {
+    background-color: #61dafb;
+    margin: 5px 0;
+    padding: 10px;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-link {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+        .header-container {
+            height: 60vh; /* Reduce header height for tablets */
+        }
+    
+        .video-container video {
+            height: 100%; /* Video adjusts to container */
+        }
+    .text {
+        font-size: 2rem;
+    }
+
+    .search-input,
+    .search-button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .nav-list {
+        gap: 5px;
+    }
+
+    .nav-list li a {
+        font-size: 0.9rem;
+    }
+
+    .welcome {
+        font-size: 1.5rem;
+    }
+}

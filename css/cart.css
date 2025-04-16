@@ -1,0 +1,213 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #282c34;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+td img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+input.quantity-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 18px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.proceed-btn {
+    background-color: #0051cc;  /* darker blue */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-btn:hover {
+    background-color: #003eaa;
+}
+
+
+#clear-cart {
+    background-color: #dc3545;
+    color: white;
+}
+
+#clear-cart:hover {
+    background-color: #b52a38;
+}
+
+#apply-favorites {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+#apply-favorites:hover {
+    background-color: #e0a800;
+}
+
+.remove-btn {
+    background-color: #ff4d4f;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+
+.favorite-btn {
+    background-color: #17a2b8;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.favorite-btn:hover {
+    background-color: #117a8b;
+}
+
+.total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    input.quantity-input {
+        width: 50px;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .proceed-btn {
+        font-size: 15px;
+    }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    td {
+        text-align: left;
+        padding: 8px 10px;
+        border: none;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #444;
+    }
+
+    .total {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .proceed-btn,
+    #clear-cart,
+    #apply-favorites {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    .remove-btn,
+    .favorite-btn {
+        display: inline-block;
+        width: 48%;
+        margin: 5px 1%;
+        font-size: 13px;
+        padding: 10px 0;
+    }
+}

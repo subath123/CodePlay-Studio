@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <h1 id="checkout-title">Checkout</h1>
+
+    <div class="checkout-wrapper" aria-labelledby="checkout-title">
+        <div class="checkout-container">
+            <!-- Left: Items -->
+            <section class="checkout-items" id="checkout-items-section" aria-labelledby="cart-items-label">
+                <h2 id="cart-items-label" class="visually-hidden">Cart Items</h2>
+                <!-- Dynamically injected items will be added to this container -->
+                <div class="checkout-items" id="checkout-items">
+                    <!-- Items injected via JS -->
+                </div>
+            </section>
+
+            <!-- Right: Summary & Form -->
+            <div class="checkout-summary">
+                <h2>Receipt</h2>
+                <div class="summary-line">
+                    <span>Total Amount</span>
+                    <span id="total-amount">Rs. 0.00</span>
+                </div>
+                <div class="summary-line">
+                    <span>Discount Amount</span>
+                    <span id="discount-amount">Rs. 0.00</span>
+                </div>
+                <div class="summary-line bold">
+                    <span>Payable Amount</span>
+                    <span id="checkout-total">Rs. 0.00</span>
+                </div>
+
+                <form id="checkout-form" action="#" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+                    <label for="address">Delivery Address</label>
+                    <input type="text" id="address" name="address" placeholder="Delivery Address" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="cash">Cash on Delivery</option>
+                        <option value="card">Card</option>
+                    </select>
+
+                    <fieldset id="card-fields" style="display: none;">
+                        <legend>Card Details</legend>
+
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="Card Number">
+
+                        <label for="expiry">Expiry Date (MM/YY)</label>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                    </fieldset>
+
+                    <button type="submit" class="checkout-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/checkout.js"></script>
+</body>
+</html>
